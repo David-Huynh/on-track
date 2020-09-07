@@ -63,7 +63,9 @@ const MacroChart = (props) =>{
                     position: 'absolute',
                     left: deviceWidth / 2 - labelWidth / 2,
                     textAlign: 'center',
-                    fontWeight: 'bold'}}>
+                    fontWeight: 'bold'
+                }}
+            >
                 {`${selectedSlice[0]}\n${selectedSlice[1]}`} 
             </Text>
         </PieChart>

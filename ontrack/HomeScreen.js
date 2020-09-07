@@ -18,20 +18,20 @@ const HomeScreen = () => {
             style={styles.scrollView} 
             showsVerticalScrollIndicator={false}
             alwaysBounceVertical={false}
-            bounces={false}>
-
+            bounces={false}
+        >
             {/*
                 Displays the pie chart at the beginning 
                 of home screen
             */}
-            <View style={{flex: 1}}>
+            <View style={{flex: 1, backgroundColor:'#fafafa'}}>
                 <MacroChart></MacroChart>
             </View>
             {/*
                 Displays the line charts at   
-                of home screen
+                home screen
             */}
-            <View >
+            <View style={{marginTop:10, flex: 1, backgroundColor:'#fafafa', paddingBottom:10}}>
                 <View style={styles.titleContainer}>
                     <Text style={styles.sectionTitle}>Your progress</Text>
                 </View>
@@ -41,7 +41,7 @@ const HomeScreen = () => {
                     alwaysBounceHorizontal={false}
                     directionalLockEnabled={true}
                     showsHorizontalScrollIndicator={false}
-                    style={{flexDirection:'row'}}
+                    style={{flex:1,flexDirection:'row'}}
                 >
                     <ProgressChart></ProgressChart>
                 </ScrollView>
@@ -54,24 +54,19 @@ const styles = StyleSheet.create({
     scrollView: {
         flex: 1,
         flexDirection: 'column',
-        backgroundColor: '#fafafa',
+        backgroundColor: '#c9ccd1',
         
     },
     titleContainer: {
-        marginTop: 32,
+        marginTop: 20,
         marginLeft: 20,
     },
     sectionTitle: {
-        flex:1,
         fontFamily:'Impact',
-        
         
         fontSize: 22,
         fontWeight: 'bold',
         color: '#2a2a2a',
-    },
-    lineChart: {
-        flex: 1,
     },
     sectionContainer: {
       marginTop: 32,

@@ -57,7 +57,7 @@ const App: () => React$Node = () => {
     </NavigationContainer>
   );
 };
-
+//
 const styles = StyleSheet.create({
   navBar: {
     backgroundColor: '#ffffff',
