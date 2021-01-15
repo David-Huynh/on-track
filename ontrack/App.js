@@ -21,7 +21,11 @@ import WorkoutScreen from './WorkoutScreen';
 
 
 const Tab = createBottomTabNavigator();
-
+/**
+ * Main Component for the app
+ * @author [David Huynh](https://github.com/David-Huynh)
+ * 
+ */
 const App: () => React$Node = () => {
   return (
     <NavigationContainer>

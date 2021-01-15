@@ -9,9 +9,14 @@ import {
     Dimensions 
   } from 'react-native';
 import { PieChart } from 'react-native-svg-charts';
-
-
+ 
+/**
+ * Shows how many macros the user has left for the day
+ * @author [David Huynh](https://github.com/David-Huynh)
+ * 
+ */
 const MacroChart = (props) =>{
+    //Define and set states of the macro chart
     const [labelWidth, setLabelWidth] = useState(0);
 
     const [proteins, setProteins] = useState(10);

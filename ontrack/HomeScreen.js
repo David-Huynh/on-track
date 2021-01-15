@@ -11,7 +11,11 @@ import {
 import MacroChart from './MacroChart.js';
 import ProgressChart from './ProgressChart.js';
 
-
+/**
+ * The default main screen of the app
+ * @author [David Huynh](https://github.com/David-Huynh)
+ * 
+ */
 const HomeScreen = () => {
     return(
         <ScrollView 

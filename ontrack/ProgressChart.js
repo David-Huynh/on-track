@@ -9,11 +9,19 @@ import {
     Dimensions 
   } from 'react-native';
 import { LineChart, Grid } from 'react-native-svg-charts';
+
+
+
 const deviceWidth = Dimensions.get('window').width;
 const graphId = 'Dumbbell Curls';
 const userId = 'BrokenAnkle';
 
-    
+
+/**
+ * Shows the amount of macros the user has left for the day
+ * @author [David Huynh](https://github.com/David-Huynh)
+ * 
+ */
 const ProgressChart = (props) =>{
     const [updatedData, updateData] = useState([]);
     useEffect(() => {

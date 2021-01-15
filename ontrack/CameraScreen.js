@@ -10,7 +10,12 @@ import {
   StatusBar,
   TouchableOpacity
 } from 'react-native';
-
+/**
+ * Camera screen to take picture of foods
+ * in order to calculate macros
+ * @author [David Huynh](https://github.com/David-Huynh)
+ * 
+ */
 const CameraScreen = () =>{
   takePicture = async () => {
     if (this.camera) {

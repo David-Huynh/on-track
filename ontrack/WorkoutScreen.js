@@ -10,6 +10,12 @@ import {
   } from 'react-native';
 import { ProgressCircle } from 'react-native-svg-charts';
 const deviceWidth = Dimensions.get('window').width;
+/**
+ * Shows best form for common exercises
+ * 
+ * @author [David Huynh](https://github.com/David-Huynh)
+ * 
+ */
 const WorkoutScreen = () => {
     const [labelWidth, setLabelWidth] = useState(0);
     return(
